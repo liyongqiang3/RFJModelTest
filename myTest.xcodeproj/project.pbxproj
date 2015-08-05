@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E13E83FE1B7237E300E00AAD /* RFJModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E13E83FD1B7237E300E00AAD /* RFJModel.m */; };
+		E13E84021B72385A00E00AAD /* NSArray+RemoveNSNull.m in Sources */ = {isa = PBXBuildFile; fileRef = E13E84011B72385A00E00AAD /* NSArray+RemoveNSNull.m */; };
+		E13E84051B723B1900E00AAD /* Persion.m in Sources */ = {isa = PBXBuildFile; fileRef = E13E84041B723B1900E00AAD /* Persion.m */; };
+		E13E84081B723BBD00E00AAD /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = E13E84071B723BBD00E00AAD /* Book.m */; };
+		E13E840A1B723E1300E00AAD /* json.txt in Resources */ = {isa = PBXBuildFile; fileRef = E13E84091B723E1300E00AAD /* json.txt */; };
 		E1836F291B68A716000D2C07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1836F281B68A716000D2C07 /* main.m */; };
 		E1836F2C1B68A716000D2C07 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1836F2B1B68A716000D2C07 /* AppDelegate.m */; };
 		E1836F2F1B68A716000D2C07 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1836F2E1B68A716000D2C07 /* ViewController.m */; };
@@ -27,6 +32,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E13E83FC1B7237E300E00AAD /* RFJModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFJModel.h; sourceTree = "<group>"; };
+		E13E83FD1B7237E300E00AAD /* RFJModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFJModel.m; sourceTree = "<group>"; };
+		E13E84001B72385A00E00AAD /* NSArray+RemoveNSNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+RemoveNSNull.h"; sourceTree = "<group>"; };
+		E13E84011B72385A00E00AAD /* NSArray+RemoveNSNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RemoveNSNull.m"; sourceTree = "<group>"; };
+		E13E84031B723B1900E00AAD /* Persion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Persion.h; sourceTree = "<group>"; };
+		E13E84041B723B1900E00AAD /* Persion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Persion.m; sourceTree = "<group>"; };
+		E13E84061B723BBD00E00AAD /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		E13E84071B723BBD00E00AAD /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		E13E84091B723E1300E00AAD /* json.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json.txt; sourceTree = "<group>"; };
 		E1836F231B68A716000D2C07 /* myTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1836F271B68A716000D2C07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1836F281B68A716000D2C07 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,6 +74,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E13E83FB1B7237E300E00AAD /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				E13E83FC1B7237E300E00AAD /* RFJModel.h */,
+				E13E83FD1B7237E300E00AAD /* RFJModel.m */,
+				E13E84091B723E1300E00AAD /* json.txt */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		E13E83FF1B72385A00E00AAD /* category */ = {
+			isa = PBXGroup;
+			children = (
+				E13E84001B72385A00E00AAD /* NSArray+RemoveNSNull.h */,
+				E13E84011B72385A00E00AAD /* NSArray+RemoveNSNull.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
 		E1836F1A1B68A716000D2C07 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +114,8 @@
 		E1836F251B68A716000D2C07 /* myTest */ = {
 			isa = PBXGroup;
 			children = (
+				E13E83FF1B72385A00E00AAD /* category */,
+				E13E83FB1B7237E300E00AAD /* lib */,
 				E1836F2A1B68A716000D2C07 /* AppDelegate.h */,
 				E1836F2B1B68A716000D2C07 /* AppDelegate.m */,
 				E1836F2D1B68A716000D2C07 /* ViewController.h */,
@@ -89,6 +124,10 @@
 				E1836F331B68A716000D2C07 /* Images.xcassets */,
 				E1836F351B68A716000D2C07 /* LaunchScreen.xib */,
 				E1836F261B68A716000D2C07 /* Supporting Files */,
+				E13E84031B723B1900E00AAD /* Persion.h */,
+				E13E84041B723B1900E00AAD /* Persion.m */,
+				E13E84061B723BBD00E00AAD /* Book.h */,
+				E13E84071B723BBD00E00AAD /* Book.m */,
 			);
 			path = myTest;
 			sourceTree = "<group>";
@@ -199,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E13E840A1B723E1300E00AAD /* json.txt in Resources */,
 				E1836F321B68A716000D2C07 /* Main.storyboard in Resources */,
 				E1836F371B68A716000D2C07 /* LaunchScreen.xib in Resources */,
 				E1836F341B68A716000D2C07 /* Images.xcassets in Resources */,
@@ -219,8 +259,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E13E84051B723B1900E00AAD /* Persion.m in Sources */,
+				E13E83FE1B7237E300E00AAD /* RFJModel.m in Sources */,
+				E13E84021B72385A00E00AAD /* NSArray+RemoveNSNull.m in Sources */,
 				E1836F2F1B68A716000D2C07 /* ViewController.m in Sources */,
 				E1836F2C1B68A716000D2C07 /* AppDelegate.m in Sources */,
+				E13E84081B723BBD00E00AAD /* Book.m in Sources */,
 				E1836F291B68A716000D2C07 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +462,7 @@
 				E1836F481B68A716000D2C07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E1836F491B68A716000D2C07 /* Build configuration list for PBXNativeTarget "myTestTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +471,7 @@
 				E1836F4B1B68A716000D2C07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

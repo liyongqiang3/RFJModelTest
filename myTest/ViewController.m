@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import "Persion.h"
+#import "Book.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"json" ofType:@"txt"];
+    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:filePath] options:NSJSONReadingMutableContainers error:nil];
+    Persion * myPersion = [[Persion alloc]initWithJsonDict:json];
+    for (int i = 0 ; i < [myPersion.books count]; i ++) {
+        Book * myBook = [myPersion.books objectAtIndex:i];
+        NSLog(@"--------------%@",myBook.name);
+    }
+    NSLog(@"--------------%@",myPersion.myBook.name);
+    
 }
 
 - (void)didReceiveMemoryWarning {

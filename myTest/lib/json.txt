@@ -1,0 +1,22 @@
+{
+"name": "liyongqiang",
+"sex": 1,
+"books": [
+{
+"bookname": "objc1",
+"bookid": "123"
+},
+{
+"bookname": "objc2",
+"bookid": "123"
+},
+{
+"bookname": "objc3",
+"bookid": "123"
+}
+],
+"book":{
+"bookname": "objc4",
+"bookid": "1235"
+}
+}
